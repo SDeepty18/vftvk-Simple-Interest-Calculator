@@ -1,9 +1,10 @@
 body {
-        background-color:White;
+        background-color:Black;
         font-family:Verdana;
-        width=1000px;
+        width=500px;
         color:black;
         padding-right=20px
+		align_text:center
      }
 h1{
     color:#3c434a;
@@ -11,11 +12,20 @@ h1{
     align:center 
   }
 .maindiv{
-    width:400px;
-    padding:20px;
-    border radius:25px;
-    align:center
+    width:40%;
+	height:60%;
+    padding:40px;
+    border-radius:25px;
+    align:center;
+	border-style: solid;
+	background-color: white;
+	position: relative;
+	border: 3px ;
+	left:30%;
+	bottom:20%;
 }
+div{
+	align:center;
+	padding:30px;
 
-
-
+}

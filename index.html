@@ -6,28 +6,42 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        
         <div class="maindiv">
-            Amount <input id="principal">  <br/>
-            
-            Rate <input type="range"  id="rate" min="1" max="20" value="10.25" onchange=updateRate(this.value) >  
-            <span id="rate_val"></span>
-            </br>
-            No. of Years <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select> <br/>
-            
-            <button onclick="compute()">Compute Interest</button>
-            
+		 <h1>Simple Interest Calculator</h1>
+		 <div>
+			<table>
+				<tr>
+					<td>Amount</td>
+					<td><input id="principal"></td>
+				</tr>
+				<tr>
+					<td>Rate</td>
+					<td><input type="range"  id="rate" min="1" max="20" value="10.25" onchange=updateRate(this.value) > <span id="rate_val"></span></td>
+				</tr>
+				<tr>
+					<td>No. of Years</td>
+					<td><select id="years">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select> </td>
+				</tr>
+				<tr>
+					<td><button onclick="compute()">Compute Interest</button></td>
+					<td></td>
+				</tr>
+			</table>
+		   	
+           
+           
             <script>
                 function compute()
                     {
@@ -54,9 +68,12 @@
             <span id="rate_val1"></span>
             <span id="result"></span>
             <span id="year"></span>
+			</div>
+			<footer>
+				
+				&#169Everyone Can Get Rich
+			</footer>			
         </div>
-        <footer>
-            &#169Everyone Can Get Rich
-        </footer>
+
     </body>
 </html>
